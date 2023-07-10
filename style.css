@@ -28,11 +28,12 @@ body {
 .main-app {
   width: 40%;
   height: 90%;
+  position: relative;
+  border-radius: 12px;
   background: white;
   margin-bottom: 2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  border-radius: 12px;
 }
 
 .upper-section {
@@ -151,6 +152,65 @@ body {
 
 .alert {
   margin: 1rem;
+}
+
+/* The Modal Styles */
+.modal {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none; /* grid otherwise */
+  place-items: center;
+  position: absolute;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.modal-content {
+  width: 50%;
+  padding: 1rem;
+  border-radius: 12px;
+  background: white;
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 2px solid #ccc;
+  padding-block: 5px;
+}
+
+.modal-body,
+.modal-buttons {
+  text-align: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-input {
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 12px;
 }
 
 /* Disables input arrows: https://stackoverflow.com/questions/17164278/disable-writing-in-input-type-number-html5 */
